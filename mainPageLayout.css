@@ -1,0 +1,40 @@
+#extraLeftBox{
+	float: right;
+}
+
+#centerCanvas{
+	margin: auto;
+	background-color: #EEEEEE;
+	width: 960px;
+	height: 1200px;
+}
+
+#extraRightBox{
+	float: left;
+}
+
+/* centerCanvas Content */
+
+#pageTop{
+	width: auto;
+	height: 150px;
+	background-color: #FFF000;
+}
+
+#topNavigation{
+	width: auto;
+	height: 50px;
+	background-color: #000FFF;
+}
+
+#contentBox{
+	width: auto;
+	height: 975px;
+	background-color: #0FFF00;
+}
+
+#bottomBox{
+	width: auto;
+	height: 25px;
+	background-color: #00FFF0;
+}
