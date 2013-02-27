@@ -1,40 +1,27 @@
-#extraLeftBox{
-	float: right;
-}
-
-#centerCanvas{
-	margin: auto;
-	background-color: #EEEEEE;
-	width: 960px;
-	height: 1200px;
-}
-
-#extraRightBox{
-	float: left;
-}
-
-/* centerCanvas Content */
-
-#pageTop{
-	width: auto;
+#headPiece{
+	margin-left: 100px;
+	width: 860px;
 	height: 150px;
-	background-color: #FFF000;
+	background-color: #DDDDDD;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
 }
 
-#topNavigation{
-	width: auto;
-	height: 50px;
-	background-color: #000FFF;
+#bodyPiece{
+	margin-left:  100px;
+	margin-top: 15px;
+	width: 860px;
+	height: 450px;
+	background-color:  #DDDDDD;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
 }
 
-#contentBox{
+#bottomPiece{
+	margin-top: 15px;
 	width: auto;
-	height: 975px;
-	background-color: #0FFF00;
-}
-
-#bottomBox{
-	width: auto;
-	height: 25px;
-	background-color: #00FFF0;
+	height: 20px;
+	background-color:  #DDDDDD;
 }
