@@ -1,0 +1,32 @@
+#border{
+	width: 100%;
+
+}
+
+.picture{
+	width: 49%;
+	height: 49%;
+	float: left;
+}
+
+.textArea{
+	width: 50%;
+	float: right;
+}
+
+.title{
+	margin: 10px;
+	font-size: 25px;
+	font-weight:  bold;
+}
+
+.text{
+	 margin: 10px;
+}
+
+<!-- admin panel -->
+
+.row{
+	width: 100px;
+	float: left;
+}
