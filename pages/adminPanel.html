@@ -1,0 +1,158 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>admin panel</title>
+        <style type = "text/css">
+            div.row{
+                width: 200px;
+                float: left;
+            }
+            div.row2{
+                width: 250px;
+                float: left;
+            }      
+        </style>
+    </head>
+    <body>
+        <div>
+            <form>
+                <fieldset style="width: 750px">
+                    <legend>Admin Panel</legend>
+                    <label>Page Head</label>
+                    <div>
+                        <div class="row2">
+                            <input type="text" name="linkHeadPicture" placeholder="LinkHeader"/>
+                            <input type="submit" name="submit" value="Submit" onclick="(this.form)" tabindex="1"/>
+                        </div>
+                        <label>Edit Header*</label>
+                    </div>
+                    <p></p>
+                    <p></p>
+                    <label>Page Navigation</label>
+                    <div>
+                        <div class="row2">
+                            <input type="text" name="nameNewTab" placeholder="NewTabName"/>
+                            <input type="submit" name="submit" value="Create" onclick="(this.form)" tabindex="1"/>
+                        </div>
+                    </div>
+                    <label>Create new Tab*</label>
+                    <p></p>
+                    <p></p>
+                    <fieldset>
+                    <div>
+                        <div>
+                            <label style="margin-right: 25px;"> tabName 1 </label>
+                            <input type="submit" name="submit" value="Modify" onclick="(this.form)" tabindex="1"/>
+                            <input type="submit" name="submit" value="Delete" onclick="(this.form)" tabindex="1"/>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label style="margin-right: 25px;"> tabName 2 </label>
+                            <input type="submit" name="submit" value="Modify" onclick="(this.form)" tabindex="1"/>
+                            <input type="submit" name="submit" value="Delete" onclick="(this.form)" tabindex="1"/>
+                        </div>
+                    </div>
+                </fieldset>
+            </fieldset>
+            <fieldset style="background-color: #B0B0B0; width: 750px">
+                <select name="tabDropDown">
+                    <option value="tabName1">tabName[1]</option>
+                    <option value="tabName2">tabName[2]</option>
+                    <option value="tabName3">tabName[3]</option>
+                </select>
+                <label style="margin-left: 10px">Select wich page you want to edit</label>
+                <p></p>
+                <fieldset style="background-color: #D0D0D0;">
+                    <div class="row">
+                        <div>
+                            <select name="amountBlocks">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                        <p></p>
+                        <div>
+                            <select name="floatBehaviour">
+                                <option value="floatLeft">Float Left</option>
+                                <option value="floatRight">Float Right</option>
+                                <option value="cellSwitched">Cell Switched</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <label>Amount of blocks on the page</label>
+                        </div>
+                        <p></p>
+                        <div>
+                            <label>how the page handles blocks</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset style="background-color: #D0D0D0;">
+                    <select name="selectBlock">
+                        <option value="block1">block1</option>
+                        <option value="block2">block2</option>
+                    </select>
+                    <label style="margin-left: 10px">Select wich block you want to edit</label>
+                    <p></p>
+                    <fieldset style="background-color: #F0F0F0;">
+                        <div class="row">
+                            <select name="titleFont">
+                                <!-- INSERT STYLES HERE -->
+                            </select>
+                            <p></p>
+                            <select name="textFont">
+                                <!-- INSERT STYLES HERE -->
+                            </select>
+                        </div>
+                        <div class="row">
+                            <label>title font</label>
+                            <p></p>
+                            <label>text font</label>
+                        </div>
+                    </fieldset style="background-color: #F0F0F0;">
+                    <fieldset style="background-color: #F0F0F0;">
+                        <div class="row">
+                            <input name="pictureDir"/>
+                        </div>
+                        <div>
+                            <input type="submit" name="submit" value="SUBMIT"/>
+                            <label style="margin-left: 10px">submit block picture</label>
+                        </div>
+                        <p></p>
+                        <div>
+                            <div class="row">
+                                <!-- insert code to view pictures uploaded --> picture.jpg
+                            </div>
+                            <div class="row">
+                                <input type="submit" name="delete" value="MODIFY"/>
+                                <input type="submit" name="modify" value="DELETE"/>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset style="background-color: #F0F0F0;"> 
+                        <div class="row">
+                            <input name="Title"/ placeholder="insert title">
+                        </div>
+                        <div>
+                            <input type="submit" name="submitModify" value="SUBMIT/MODIFY"/>
+                        </div>
+                        <div>
+                            <textarea name="textBox" rows="5" cols="75" placeholder="insert text"></textarea>
+                        </div>
+                    </fieldset>
+                </fieldset>
+            </fieldset>
+        </form>
+    </body>
+</html>
