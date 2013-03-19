@@ -4,21 +4,42 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>HTML main page</title>
  		<link rel="stylesheet" type="text/css" href="mainPageLayout.css">
+    <script type="text/javascript" src="jquery-1.3.2.js"></script>
     </head>
     <body>
-    	<div id="extraLeftBox"></div>
-    	<div id="centerCanvas">
-            <div id="pageTop">
-                <!-- insert logo and top picture code here -->
-            </div>
-            <div id="topNavigation">
-                <!-- insert navigation code here -->
-            </div>
-            <div id="contentBox">
-                <!-- Loaded content trough navigation should end up here -->
-            </div>
-            <div id="bottomBox"></div>
-    	</div>
-    	<div id="extraRightBox"></div>
+        <ul id="navigation">
+            <li class="home"><a title="Home"></a></li>
+            <li class="about"><a title="About"></a></li>
+            <li class="search"><a title="Search"></a></li>
+            <li class="photos"><a title="Photos"></a></li>
+            <li class="rssfeed"><a title="Rss Feed"></a></li>
+            <li class="podcasts"><a title="Podcasts"></a></li>
+            <li class="contact"><a title="Contact"></a></li>
+        </ul>
+        <div id="wrapper">
+          <div id="headPiece">
+
+          </div>
+          <div id="bodyPiece">
+
+          </div>
+          <div id="bottomPiece">
+          </div>
+        </div>
+
+        <script type="text/javascript">
+            $(function() {
+                $('#navigation a').stop().animate({'marginLeft':'-85px'},1000);
+
+                $('#navigation > li').hover(
+                    function () {
+                        $('a',$(this)).stop().animate({'marginLeft':'-2px'},200);
+                    },
+                    function () {
+                        $('a',$(this)).stop().animate({'marginLeft':'-85px'},200);
+                    }
+                );
+            });
+        </script>
     </body>
 </html>
