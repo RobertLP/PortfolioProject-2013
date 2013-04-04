@@ -1,12 +1,12 @@
-drop database if exists `portofolio`;
+drop database if exists `portfolio`;
 
-create database `portofolio`
+create database `portfolio`
   default character set utf8
   default collate utf8_general_ci;
 
-grant all privileges on `portofolio` . * to `portofolio`@`localhost` identified by 'sfhdKLG^%*^T86to86t68GR&^rt56dc7ui^R&I%F8';
+grant all privileges on `portfolio` . * to `portfolio`@`localhost` identified by 'sfhdKLG^%*^T86to86t68GR&^rt56dc7ui^R&I%F8';
 
-use portofolio;
+use portfolio;
 
 create table settings (
   setting varchar(32),
@@ -17,9 +17,9 @@ create table settings (
 create table pages (
   page_id int not null auto_increment,
   name varchar(32) not null,
-  num_blocks int not null,
-  icon varchar(128) not null,
-  floats enum('left', 'right', 'both') not null,
+  num_blocks int not null default 10,
+  icon varchar(128) not null default '',
+  floats enum('left', 'right', 'both') not null default 'both',
   primary key (page_id)
 ) engine=InnoDB;
 

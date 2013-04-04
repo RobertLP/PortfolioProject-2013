@@ -13,6 +13,12 @@ if($page === false)
 	$page = $statement->fetch(PDO::FETCH_ASSOC);
 }
 
+if($page === false)
+{
+	header('Location: ./admin/');
+	die;
+}
+
 $statement = $db->prepare('SELECT * FROM blocks WHERE page_id=:page_id');
 $statement->bindParam(':page_id', $page['page_id'], PDO::PARAM_INT);
 $statement->execute();
@@ -22,8 +28,8 @@ $blocks = array();
 while($block = $statement->fetch(PDO::FETCH_ASSOC))
 {
 	$blocks[] = $block;
-}
 
+}
 ?>
 <!doctype html>
 <html>
@@ -67,6 +73,7 @@ while($block = $statement->fetch(PDO::FETCH_ASSOC))
 			?>
 			
 			<div id="bottomPiece">
+				Ons project is nog niet helemaal af. Sommige onderdelen zullen in het geheel nog niet werken.
 			</div>
 		</div>
 
