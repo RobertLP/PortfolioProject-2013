@@ -47,7 +47,7 @@ while($block = $statement->fetch(PDO::FETCH_ASSOC))
 				$statement->execute();
 				while($row = $statement->fetch())
 				{
-					echo '<li class="tab'.$row['page_id'].'"><a title="'.$row['name'].'" href="/?page_id='.$row['page_id'].'"></a></li>';
+					echo '<li class="tab'.$row['page_id'].'"><a title="'.$row['name'].'" href="./?page_id='.$row['page_id'].'"></a></li>';
 				}
 			?>
 		</ul>
