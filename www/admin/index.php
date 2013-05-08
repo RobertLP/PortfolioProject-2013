@@ -1,4 +1,4 @@
-<pre><?php
+<?php
 require_once '../../inc.php';
 
 $statement = $db->prepare('SELECT * FROM pages WHERE page_id=:page_id');
@@ -70,14 +70,7 @@ if(isset($_POST['page_id']) && isset($_POST['submit']) && $_POST['submit'] == 'M
 	}
 }
 
-echo '$_POST: ';
-print_r($_POST);
-
-echo '$_GET: ';
-print_r($_GET);
-
-
-?></pre>
+?>
 <!doctype html>
 <html>
     <head>
